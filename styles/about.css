@@ -1,0 +1,118 @@
+.about-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.about-hero {
+  width: 100%;
+  height: 30rem;
+  background-image: url("../images/pier2.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  transition: all .3s ease-in-out;
+}
+
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  background: rgba(0,0,0,.45);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; 
+  z-index: 1;
+}
+
+.about-hero .about-hero-info {
+  z-index: 2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin-left: 6rem;
+  gap: 1rem;
+}
+
+.about-hero .about-hero-info h3 {
+  margin: 0;
+  font-size: xx-large;
+
+}
+
+.about-hero .about-hero-info p {
+  margin: 0;
+}
+
+.about-story {
+  display: flex;
+  gap: 3rem;
+  margin: 3rem 3rem;
+}
+
+.about-story img {
+  width: 50%;
+  max-width: 40rem;
+  border: double 8px var(--primary-color);
+}
+
+.about-story h5 {
+  color: var(--primary-color);
+  font-size: xx-large;
+  margin: 0;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  border-bottom: 1px solid var(--primary-color);
+  width: fit-content;
+  padding-bottom: 1rem;
+}
+
+.about-story p {
+  margin: 0;
+  font-weight: 300;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .about-hero {
+    justify-content: center;
+  }
+
+  .about-hero .about-hero-info {
+    max-width: 100%;
+    margin-left: 0;
+    padding: 0 1rem;
+  }
+
+  .about-hero .about-hero-info h3 {
+    text-align: center;
+  }
+
+  .about-hero .about-hero-info p {
+    text-align: center;
+  }
+
+  .about-story {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-story img {
+    width: 100%;
+  }
+
+  .about-story section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

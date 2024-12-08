@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lighthouse | Home</title>
+  <link rel="icon" href="./images/logo1.png">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/home.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="home-btn">Home</a>
+      <a href="./pages/menu.html" class="menu-btn">Menu</a>
+      <a href="./pages/about.html" class="about-btn">About</a>
+      <a href="./pages/contact.html" class="contact-btn">Contact</a>
+    </nav>
+  </header>
+
+  <div id="content">
+    <div class="home-hero">
+      <div class="home-hero-cover">
+        <h1>The Lighthouse<br>Restaurant & Dock Bar</h1>
+        <a href="./pages/menu.html" class="menu-btn">Check out our Menu</a>
+      </div>
+    </div>
+    <div class="home-hero-info">
+      <h2>Welcome to the Lighthouse</h2>
+      <p>Located where the Chesapeake Bay and Potomac River converge, The Lighthouse is a beach-chic hospitality destination on Maryland’s Western Shore. World-class restaurant, uniquely curated motel and an eclectic boutique…waterfront with stunning sunset views.</p>
+    </div>
+    <div class="home-about-info">
+      <img src="./images/logo1.png" alt="Lighthouse Logo" class="home-about-img">
+      <p>The Lighthouse is a recently refurbished 1940s-era fishing camp in St. Mary’s County, Maryland. We have brought this beloved property back to life with an artful interpretation of its restaurant, motel and pier, adding gardens both for food source and relaxation.</p>
+    </div>
+
+    <div class="home-about-options">
+
+      <div class="home-about-image-container eat menu-btn" onclick="navigateToMenu();">
+        <p>Eat</p>
+      </div>
+
+      <div class="home-about-image-container drink menu-btn" onclick="navigateToMenu();">
+        <p>Drink</p>
+      </div>
+
+      <div class="home-about-image-container relax menu-btn" onclick="navigateToAbout();">
+        <p>Relax</p>
+      </div>
+    </div>
+
+    <div class="reviews">
+      <div class="left-side">
+        <div class="porthole" id="porthole">
+          <img src="./images/porthole.png" alt="Porthole">
+        </div>
+        <div class="buttons">
+          <button class="prev-btn media-btn" onclick="prevReview();">←</button>
+          <button class="next-btn media-btn" onclick="nextReview();">→</button>
+        </div>
+      </div>
+      
+      <section>
+        <h2>See what our Customers Say</h2>
+        <p id="reviewContent">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptates explicabo vel voluptatibus repudiandae adipisci beatae alias, id tempora voluptas.
+        </p>
+        <p id="reviewerName">Reviewer Name</p>
+        
+      </section>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Copyright @ 2024 The Lighthouse Restaurant & Dock Bar</p>
+  </footer>
+
+
+  <script src="./scripts/app.js" type="module"></script>
+</body>
+</html>

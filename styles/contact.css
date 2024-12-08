@@ -1,0 +1,134 @@
+
+
+.location-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 3rem;
+  background-color: rgb(235, 235, 235);
+}
+
+.location-container img {
+  width: 50%;
+  max-width: 40rem;
+  border: double var(--primary-color) 8px;
+  border-radius: 6px;
+}
+
+.location-container section {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-container section h2 {
+  color: var(--primary-color);
+  font-size: xx-large;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.location-container section p {
+  font-size: large;
+  font-weight: 300;
+  color: var(--secondary-color);
+}
+
+.location-container section p .p-label {
+  font-weight: 600;
+}
+
+
+.form-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 3rem 0;
+  padding: 0 3rem;
+}
+
+.form-container img {
+  width: 50%;
+  max-width: 40rem;
+  border: double var(--primary-color) 8px;
+  border-radius: 6px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container form h2 {
+  color: var(--primary-color);
+  font-size: xx-large;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.form-container form .input-bar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.form-container form .input-bar-container p {
+  font-size: large;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.form-container form .input-bar-container input {
+  padding: .75rem;
+  color: var(--secondary-color);
+  border-radius: 6px;
+  border: double var(--primary-color) 4px;
+  transition: all .3s ease-in-out;
+}
+
+.form-container form .input-bar-container input:focus,
+.form-container form .input-bar-container input:hover {
+  outline: none;
+  box-shadow: 0 4px 8px #000;
+}
+
+.form-container form a {
+  margin-top: 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  padding: .8rem 1.2rem;
+  border: solid 1px white;
+  border-radius: 8px;
+  font-size: large;
+  text-decoration: none; 
+  text-align: center;
+
+  transition: all ease-in-out .3s;
+  cursor: pointer;
+}
+
+.form-container form a:hover {
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 8px #000;
+}
+
+@media screen and (max-width: 1024px) {
+  .location-container {
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .location-container img {
+    width: 100%;
+  }
+
+  .form-container {
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column-reverse;
+  }
+  .form-container img {
+    width: 100%;
+  }
+}
