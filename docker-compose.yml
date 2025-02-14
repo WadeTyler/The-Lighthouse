@@ -1,0 +1,5 @@
+services:
+  lighthouse:
+    build: ./
+    ports:
+      - "5022:5022"
