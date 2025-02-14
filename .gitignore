@@ -3,3 +3,5 @@ reflection.md
 node_modules/
 .idea/
 .idea/*
+.env
+.env.*

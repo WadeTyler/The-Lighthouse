@@ -1,5 +1,6 @@
 services:
   lighthouse:
+    container_name: lighthouse
     build: ./
     ports:
       - "5022:5022"
